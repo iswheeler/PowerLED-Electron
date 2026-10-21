@@ -11,12 +11,13 @@ I had this old programmable LED scroller sign (model LLDP762-16128RGM if anyone'
 Unfortunately, "play around with it" meant hunting the internet for a Windows XP-era EXE file and pampering it just enough until it ran on my Mac with WINE. It worked, but it was a little clunky to setup and looked like it sorely missed its long-lost friend Clippy.
 
 ![PowerLED Example](docs/images/powerled-example.png)
+
 *"It looks like you're trying to impress your college roommates with a majestic LED sign. Get help with impressing your roommates, or impress your roommates without help?"*
 
 
 I poked a little at the output LED file to figure out how it worked but things didn't really take off until I heard about [Reverse Engineer Anything](https://github.com/morluto/rea/) for Claude Code. I figured I'd give it a whirl, and the result was truly wild: The entire app, decompiled and rebuilt in Electron. What wild times we live in.
 
-Anyway, while this was mostly just a personal project, I figured I'd put it on GitHub on the off chance someone else has the same oddball LED scroller sign that I have and appreciate a modern rewrite of the app that works on macOS and Linux. To that person: I see you. You are gonna have the sickest LED sign on the block.
+Anyway, while this was mostly just a personal project, I figured I'd put it on GitHub on the off chance someone else has the same oddball LED scroller sign that I have and would appreciate a modern rewrite of the app that works on macOS and Linux. To that person: I see you. You are gonna have the sickest LED sign on the block.
 
 That's all from me. Back to whatever Claude wrote about what this app can do:
 
