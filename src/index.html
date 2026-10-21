@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PowerLED</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header id="toolbar">
+    <div class="group">
+      <button data-cmd="new" title="New project (Ctrl+N)">New</button>
+      <button data-cmd="open" title="Open project (Ctrl+O)">Open</button>
+      <button data-cmd="save" title="Save (Ctrl+S)">Save</button>
+    </div>
+    <div class="group">
+      <button data-cmd="add-program" title="Add a program to the panel">+ Program</button>
+      <button data-cmd="add-window" title="Add a window to the current program">+ Window</button>
+      <button data-cmd="add-text" title="Add a rich-text page to the current window">+ Text</button>
+      <button data-cmd="add-media" title="Add an image page to the current window">+ Media</button>
+      <button data-cmd="add-canvas" title="Add a pixel-painting canvas to the current window">+ Canvas</button>
+    </div>
+    <div class="group">
+      <button data-cmd="duplicate" title="Duplicate (Ctrl+D)">Duplicate</button>
+      <button data-cmd="move-up" title="Move up">↑</button>
+      <button data-cmd="move-down" title="Move down">↓</button>
+      <button data-cmd="delete" title="Delete selected">Delete</button>
+    </div>
+    <div class="group">
+      <button data-cmd="undo" title="Undo (Ctrl+Z)">Undo</button>
+      <button data-cmd="redo" title="Redo (Ctrl+Shift+Z)">Redo</button>
+    </div>
+    <div class="spacer"></div>
+    <div class="group">
+      <button id="btnPreview" data-cmd="toggle-preview" class="accent" title="Play the program as the sign would (Ctrl+P)">▶ Preview</button>
+      <button data-cmd="export-usb" class="accent2" title="Export the project to a USB disk (Ctrl+E)">Export to USB…</button>
+    </div>
+  </header>
+
+  <main>
+    <aside id="tree" aria-label="Project tree"></aside>
+    <section id="stage">
+      <div id="stageBar">
+        <span id="stageTitle"></span>
+        <span class="spacer"></span>
+        <label class="inline">Zoom <input id="zoom" type="range" min="1" max="40" step="1" value="8"></label>
+      </div>
+      <div id="stageScroll">
+        <div id="stageBox">
+          <canvas id="led"></canvas>
+          <div id="overlay"></div>
+        </div>
+      </div>
+      <div id="stageHint"></div>
+    </section>
+    <aside id="inspector" aria-label="Properties"></aside>
+  </main>
+  <footer id="status"><span id="statusMsg">Ready</span><span class="spacer"></span><span id="statusInfo"></span></footer>
+
+  <dialog id="dlg"></dialog>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

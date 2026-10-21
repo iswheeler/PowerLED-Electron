@@ -1,0 +1,25 @@
+{
+  "name": "powerled-electron",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Unofficial cross-platform editor, LED preview and USB exporter for PowerLED / TF LED signs, built with Electron",
+  "license": "MIT",
+  "keywords": [
+    "led-sign",
+    "powerled",
+    "electron",
+    "reverse-engineering",
+    "tfu"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test \"test/*.test.js\""
+  },
+  "devDependencies": {
+    "electron": "^33.0.0"
+  }
+}

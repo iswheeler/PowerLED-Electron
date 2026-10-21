@@ -1,0 +1,8 @@
+node_modules/
+dist/
+out/
+*.log
+.DS_Store
+Thumbs.db
+# private sample data used by the optional real-export tests (see README > Testing)
+/samples/
